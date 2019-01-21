@@ -1,0 +1,11 @@
+//已经建立的项目，关联到git
+git init
+//建立的同时，关联到git
+git init "projectName"
+
+git log
+git log --all
+git log --oneline  //简洁展示
+git log --graph    //图形化
+
+gitk
