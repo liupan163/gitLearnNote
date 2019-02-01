@@ -9,3 +9,7 @@ git log --oneline  //简洁展示
 git log --graph    //图形化
 
 gitk
+
+git branch -av
+
+git cat-file -t    4235      //查看类型
