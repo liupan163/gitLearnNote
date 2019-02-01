@@ -13,3 +13,4 @@ gitk
 git branch -av
 
 git cat-file -t    4235      //查看类型
+git cat-file -p    4235      //查看内容
