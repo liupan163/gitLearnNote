@@ -23,4 +23,6 @@ git diff HEAD HEAD~2
 git branch -d 98652532
 git branch -D 89123216
 
-git commit --amend
+git commit --amend    //最近一次commit的信息，补充修改
+
+git rebase -i 15946264 //更改前面commit的信息
