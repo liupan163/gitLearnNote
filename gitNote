@@ -28,10 +28,25 @@ git commit --amend    //最近一次commit的信息，补充修改
 git rebase -i 15946264 //更改前N次 commit的信息
 
 git reset HEAD         //撤销所有暂存区内容
+git reset --hard HEAD
 
 git checkout fileName     //撤销工作区，修改文件内容
 
 git reset HEAD fileName   //撤销暂存区，指定文件fileName文件更改
 
-//高危险指令 git reset --hard   5bf3df
-dd
+//高危险指令
+git reset --hard   5bf3df
+
+git log -n8 --all --graph   //查看最近8个提交
+
+git diff branch1 branch2 -- fileName  //对比两个分支上的文件，的差异
+
+git branch --set-upstream debug1 origin/debug1   //本地debug分支对应到，远端origin/debug分支上
+
+git rm fileName  // 删除文件
+
+git stash //缓存
+git stash pop
+git stash apply
+//假设有同一个文件，更改后有恢复，
+//小tip：先git reset --hard HEAD ,git stash pop 将缓存修改回复了再说
