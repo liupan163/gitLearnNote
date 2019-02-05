@@ -34,3 +34,4 @@ git checkout fileName     //撤销工作区，修改文件内容
 git reset HEAD fileName   //撤销暂存区，指定文件fileName文件更改
 
 //高危险指令 git reset --hard   5bf3df
+dd
